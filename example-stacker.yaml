@@ -1,0 +1,13 @@
+test:
+  from:
+    type: scratch
+  import:
+    - path: README.md
+      dest: /
+
+test-bigger:
+  from:
+    type: docker
+    url: docker://centos:latest
+  run: |
+    echo "The Secret Cosmic Music of the East German Olympic Program 1972-83, Vol. 4" > /album-title
